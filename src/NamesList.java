@@ -50,7 +50,7 @@ public class NamesList {
                 """);
         Scanner sc = new Scanner(System.in);
         String name = "-nothing yet-";
-        while(!name.isBlank()) {
+        while(!name.isBlank() && sc.hasNextLine()) {
             name = sc.nextLine();
             if(!name.isBlank()) {
                 names.add(name);
